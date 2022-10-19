@@ -1,9 +1,9 @@
-import { Category } from "../model/Category";
+import { Category } from '../model/Category';
 
 // DTO => Data Transfer Object
 interface ICreateCategoryDTO {
-  name: string,
-  description: string
+  name: string;
+  description: string;
 }
 
 interface ICategoriesRepositories {
@@ -12,4 +12,4 @@ interface ICategoriesRepositories {
   create({ name, description }: ICreateCategoryDTO): void;
 }
 
-export { ICategoriesRepositories, ICreateCategoryDTO }
+export { ICategoriesRepositories, ICreateCategoryDTO };
