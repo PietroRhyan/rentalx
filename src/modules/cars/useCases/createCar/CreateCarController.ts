@@ -8,11 +8,11 @@ class CreateCarController {
     const {
       name,
       description,
-      brand,
       daily_rate,
       license_plate,
-      category_id,
       fine_amount,
+      brand,
+      category_id,
     } = req.body;
 
     const createCarUseCase = container.resolve(CreateCarUseCase);
@@ -20,11 +20,11 @@ class CreateCarController {
     const car = await createCarUseCase.execute({
       name,
       description,
-      brand,
       daily_rate,
       license_plate,
-      category_id,
       fine_amount,
+      brand,
+      category_id,
     });
 
     return res.status(201).json(car);

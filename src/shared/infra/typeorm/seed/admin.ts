@@ -17,4 +17,4 @@ async function create() {
   await connection.close();
 }
 
-create().then(() => console.log('Useradmin created!'));
+create().then(() => console.log('User admin created!'));
