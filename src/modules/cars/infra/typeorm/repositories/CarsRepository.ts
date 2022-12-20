@@ -37,9 +37,9 @@ class CarsRepository implements ICarsRepository {
   }
 
   async findByLicensePlate(license_plate: string): Promise<Car> {
-    const car = await this.repository.findOne(
+    const car = await this.repository.findOne({
       license_plate,
-    );
+    });
 
     return car;
   }
