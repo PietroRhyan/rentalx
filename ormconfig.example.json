@@ -1,6 +1,6 @@
 {
   "type": "postgres",
-  "ports": 5432,
+  "port": 5432,
   "host": "localhost",
   "username": "docker",
   "password": "ignite",
